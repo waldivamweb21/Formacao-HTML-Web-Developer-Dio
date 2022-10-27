@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Cadastro</title>
+</head>
+<body>
+    <!-- form name: nome do formulario, 
+         action: pra onde é direcionado, Ex:https://meusite.com/signup
+         method: metodo da requisicao. Post: que envia direto proservidor.
+         "quando tiver senha"...
+         Target: abrir em uma nova página. Quando tiver: _blank
+         Autocomplete: completar ou não as informações. Ex. autocomplete="off" 
+         salva as informações no navegadores tipo login e não senha.
+         Onsubmit: é um evento, html para o java script quando voce clica no botão faz a acao.
+            logica para enviar tipo fazer com if.
+        -->
+    <form name="signup" onsubmit="alert(' enviei o formulario');" target="_blank" method="POST" action="#">
+        Nome: <input type="text" name="name" /><br>
+        Idade: <input type="number" name="age" /><br>
+        Senha: <input type="password" name="password" /><br>
+        <button type="submit">Enviar</button>
+    </form>
+    
+</body>
+</html>
